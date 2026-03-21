@@ -1,6 +1,9 @@
 # sri-negamam-silks
 <!DOCTYPE html>
 <html lang="en">
+<title>Negamam Silks | Traditional Handloom Sarees</title>
+<meta name="description" content="Buy authentic Negamam silk sarees directly from traditional weavers. Premium quality, rich colors, affordable prices.">
+<meta name="keywords" content="Negamam silks, silk sarees Tamil Nadu, handloom sarees Coimbatore">
 <head>
 <meta charset="UTF-8">
 <meta name="google-site-verification" content="y23ovCnCIfhEont0WRIXDGXxixSjN37bHS4F6o_umiw" />
