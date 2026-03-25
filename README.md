@@ -1,6 +1,6 @@
-# Negamam Silks Website
+# SRI NEGAMAM SILKS Website
 
-Commercial landing page for **Negamam Silks in Palladam**, designed as a premium single-page website for showcasing silk saree collections, local trust, and lead-generation calls to action.
+Commercial landing page for **SRI NEGAMAM SILKS in Palladam**, designed as a premium single-page website for showcasing silk saree collections, local trust, and lead-generation calls to action.
 
 ## Files
 - `index.html` — main marketing website page.
