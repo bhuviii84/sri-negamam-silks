@@ -3,94 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="SRI NEGAMAM SILKS in Palladam offers elegant silk sarees, wedding collections, festive drapes, and custom weaving inspired by Tamil Nadu handloom traditions."
-  />
-  <meta
-    name="keywords"
-    content="SRI NEGAMAM SILKS, Palladam silk sarees, Tamil Nadu handloom sarees, bridal sarees, festive sarees"
-  />
-  <meta name="google-site-verification" content="y23ovCnCIfhEont0WRIXDGXxixSjN37bHS4F6o_umiw" />
-  <title>SRI NEGAMAM SILKS | Premium Sarees in Palladam</title>
+  <title>Sri Negamam Silks</title>
   <style>
     :root {
-      --bg: #fffaf6;
-      --surface: #ffffff;
-      --surface-alt: #f7efe6;
-      --text: #2a1c16;
-      --muted: #6e574c;
-      --primary: #8b1538;
-      --primary-dark: #64102a;
-      --accent: #d9a441;
-      --border: rgba(42, 28, 22, 0.08);
-      --shadow: 0 20px 45px rgba(64, 33, 21, 0.12);
-      --radius: 24px;
-      --max-width: 1180px;
+      --brand-blue: #173f9e;
+      --bg: #ffffff;
+      --soft: #f7f8fc;
+      --line: #e3e6f2;
+      --text: #1e1e1e;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
-      background:
-        radial-gradient(circle at top, rgba(217, 164, 65, 0.18), transparent 30%),
-        linear-gradient(180deg, #fffaf6 0%, #fff5ee 100%);
-      line-height: 1.6;
+      background: var(--bg);
+      line-height: 1.5;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .container {
-      width: min(var(--max-width), calc(100% - 2rem));
-      margin: 0 auto;
-    }
+    img { width: 100%; display: block; border-radius: 12px; }
+    .container { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; }
 
     .topbar {
-      background: var(--primary-dark);
-      color: #fff5f0;
-      font-size: 0.95rem;
-    }
-
-    .topbar .container {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
+      background: #f2f6ff;
+      border-bottom: 1px solid var(--line);
       padding: 0.7rem 0;
-      flex-wrap: wrap;
+      font-size: 0.96rem;
+      color: #263c73;
     }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(255, 250, 246, 0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav {
+    .topbar-line {
       display: flex;
-      justify-content: space-between;
+      gap: 0.7rem;
       align-items: center;
-      padding: 1rem 0;
-      gap: 1rem;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
     }
 
     .header-stack {
@@ -98,10 +44,13 @@
     }
 
     .brand-wrap {
+    header { border-bottom: 1px solid var(--line); }
+    .brand-center {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 0.9rem;
-      min-width: 0;
+      justify-content: center;
+      padding: 1rem 0 0.8rem;
     }
 
     .centered-brand {
@@ -112,27 +61,20 @@
     }
 
     .brand-logo {
-      width: 82px;
-      height: 82px;
+      width: 96px;
+      height: 96px;
       object-fit: contain;
       border-radius: 14px;
+      border: 1px solid #d6dff4;
       background: #fff;
-      border: 1px solid rgba(23, 63, 158, 0.2);
     }
-
-    .brand-logo svg {
-      width: 100%;
-      height: 100%;
-      display: block;
-      border-radius: inherit;
-    }
-
-    .brand {
-      color: #173f9e;
+    .brand-name {
+      margin-top: 0.35rem;
+      color: var(--brand-blue);
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.45rem, 2.3vw, 2.25rem);
-      font-weight: 800;
-      letter-spacing: 0.08em;
+      font-size: clamp(1.3rem, 2.2vw, 2rem);
+      font-weight: 700;
+      letter-spacing: 0.03em;
       text-transform: uppercase;
       text-align: center;
       line-height: 1.1;
@@ -308,51 +250,25 @@
       margin: 1.5rem 0 2rem;
     }
 
-    .hero-stats {
+    .menu-row {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: 1fr auto;
       gap: 1rem;
+      align-items: center;
+      padding: 0.7rem 0 1rem;
+      border-top: 1px solid var(--line);
     }
-
-    .stat-card,
-    .feature-card,
-    .collection-card,
-    .testimonial,
-    .contact-card,
-    .highlight-card {
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+    .menu-wrap { position: relative; }
+    .menu-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 10px;
+      height: 42px;
+      width: 48px;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
-
-    .stat-card {
-      padding: 1.2rem;
-    }
-
-    .stat-card strong {
-      display: block;
-      font-size: 1.7rem;
-      color: var(--primary);
-    }
-
-    .hero-panel {
-      background: linear-gradient(180deg, rgba(139, 21, 56, 0.96), rgba(100, 16, 42, 0.97));
-      border-radius: 32px;
-      color: #fff;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-      min-height: 470px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    .hero-panel::before,
-    .hero-panel::after {
-      content: "";
+    .menu-links {
       position: absolute;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.1);
@@ -479,42 +395,63 @@
 
     .story {
       background: var(--surface-alt);
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.6rem;
+      min-width: 220px;
+      display: none;
+      box-shadow: 0 8px 24px rgba(16, 30, 70, 0.12);
+      z-index: 10;
     }
+    .menu-links.show { display: grid; }
+    .menu-links a {
+      padding: 0.55rem 0.65rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #1e2d56;
+      font-weight: 600;
+    }
+    .menu-links a:hover { background: var(--soft); }
 
-    .story-grid,
-    .contact-grid {
+    .weave-6x6 {
+      width: 170px;
+      height: 170px;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.5rem;
-      align-items: stretch;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 3px;
+      padding: 8px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
     }
+    .weave-6x6 span { border-radius: 3px; }
 
-    .story-panel {
-      background: linear-gradient(160deg, #fff, #f7efe6);
-      border-radius: 30px;
-      padding: 2rem;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-    }
+    section { padding: 2rem 0; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 0.9rem; color: #172f64; }
 
-    .story-points {
+    .card-grid-11 {
       display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
-      margin-top: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .card p {
+      margin: 0;
+      padding: 0.65rem 0.75rem 0.9rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.94rem;
     }
 
-    .story-point {
-      padding: 1rem 1.1rem;
-      border-left: 4px solid var(--accent);
-      background: rgba(255, 255, 255, 0.75);
-      border-radius: 0 18px 18px 0;
-    }
-
-    .process {
-      background: linear-gradient(180deg, rgba(139, 21, 56, 0.05), transparent 65%);
-    }
-
-    .process-line {
+    .about-grid,
+    .craft-images {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
@@ -587,22 +524,41 @@
       border-radius: 32px;
       padding: 2.4rem;
       box-shadow: var(--shadow);
+    .cycle {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .cycle-step {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.85rem;
+      text-align: center;
+      background: var(--soft);
+      font-weight: 600;
+      font-size: 0.9rem;
+      position: relative;
+    }
+    .cycle-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -0.62rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6f7daa;
+      font-size: 1.1rem;
+      background: white;
+      padding: 0 0.2rem;
     }
 
-    .cta-band p,
-    .hero-panel p {
-      color: rgba(255, 255, 255, 0.85);
+    .contact-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1rem;
     }
-
-    .contact-card strong {
-      color: var(--primary);
-    }
-
-    footer {
-      padding: 2rem 0 3rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+    .contact-list { margin: 0; padding-left: 1rem; }
 
     @media (max-width: 960px) {
       .hero-grid,
@@ -654,12 +610,22 @@
       .hero-panel {
         min-height: auto;
       }
+    @media (max-width: 920px) {
+      .card-grid-11 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .about-grid, .craft-images { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .cycle { grid-template-columns: 1fr; }
+      .cycle-step:not(:last-child)::after { content: "↓"; right: 50%; top: auto; bottom: -0.85rem; transform: translateX(50%); }
+    }
+    @media (max-width: 520px) {
+      .menu-row { grid-template-columns: 1fr; }
+      .weave-6x6 { margin-inline: auto; }
+      .card-grid-11 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <div class="topbar">
-    <div class="container">
+    <div class="container topbar-line">
       <span>Traditional silk sarees from Palladam, Tamil Nadu</span>
       <span>Call: +91 99655 47344, +91 99655 47355 · WhatsApp for catalogue &amp; bulk orders with same colors</span>
     </div>
@@ -699,59 +665,37 @@
           <a class="cta" href="mailto:hello@negamamsilks.com">Mail</a>
         </div>
       </nav>
+    <div class="container">
+      <div class="brand-center">
+        <img class="brand-logo" src="https://uploads.onecompiler.io/448twhky2/44hcuw4tr/1000261002.jpg" alt="Sri Negamam Silks Logo" />
+        <div class="brand-name">Sri Negamam Silks</div>
+      </div>
+
+      <div class="menu-row">
+        <div class="menu-wrap">
+          <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuLinks">☰</button>
+          <nav class="menu-links" id="menuLinks">
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a href="#craftsmanship">Craftsmanship</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="weave-6x6" aria-label="6 by 6 thread colored weaving pattern">
+          <span style="background:#8b1538"></span><span style="background:#d9a441"></span><span style="background:#1f4aa5"></span><span style="background:#e1753b"></span><span style="background:#7e2f9a"></span><span style="background:#2d7e56"></span>
+          <span style="background:#d9a441"></span><span style="background:#1f4aa5"></span><span style="background:#e1753b"></span><span style="background:#7e2f9a"></span><span style="background:#2d7e56"></span><span style="background:#8b1538"></span>
+          <span style="background:#1f4aa5"></span><span style="background:#e1753b"></span><span style="background:#7e2f9a"></span><span style="background:#2d7e56"></span><span style="background:#8b1538"></span><span style="background:#d9a441"></span>
+          <span style="background:#e1753b"></span><span style="background:#7e2f9a"></span><span style="background:#2d7e56"></span><span style="background:#8b1538"></span><span style="background:#d9a441"></span><span style="background:#1f4aa5"></span>
+          <span style="background:#7e2f9a"></span><span style="background:#2d7e56"></span><span style="background:#8b1538"></span><span style="background:#d9a441"></span><span style="background:#1f4aa5"></span><span style="background:#e1753b"></span>
+          <span style="background:#2d7e56"></span><span style="background:#8b1538"></span><span style="background:#d9a441"></span><span style="background:#1f4aa5"></span><span style="background:#e1753b"></span><span style="background:#7e2f9a"></span>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Palladam's destination for premium silk sarees</span>
-          <h1>Celebrate every occasion with timeless SRI NEGAMAM SILKS elegance.</h1>
-          <p>
-            SRI NEGAMAM SILKS brings together rich Tamil weaving heritage, carefully curated bridal collections,
-            festive drapes, and contemporary designs for families who value quality, tradition, and graceful style.
-          </p>
-          <div class="hero-actions">
-            <a class="cta" href="https://wa.me/919965547355" target="_blank" rel="noreferrer">View WhatsApp Catalogue</a>
-            <a class="btn-secondary" href="#collections">Explore Collections</a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat-card">
-              <strong>500+</strong>
-              <span>Designs across bridal, festive, and gifting collections</span>
-            </div>
-            <div class="stat-card">
-              <strong>25+ yrs</strong>
-              <span>Family-led experience serving customers in and around Palladam</span>
-            </div>
-            <div class="stat-card">
-              <strong>Custom</strong>
-              <span>Color matching, blouse ideas, and saree recommendations</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-panel">
-          <div class="fabric-card">
-            <span class="card-tag" style="color:#ffe6b3;">Featured showroom highlights</span>
-            <h3>Handpicked sarees for weddings, festivals, and special gifting.</h3>
-            <p>
-              Discover lustrous zari borders, rich jewel tones, lightweight drapes, and signature motifs inspired by
-              South Indian traditions.
-            </p>
-            <div class="fabric-palette">
-              <div class="swatch" style="background:#8b1538;"></div>
-              <div class="swatch" style="background:#d9a441;"></div>
-              <div class="swatch" style="background:#295c5a;"></div>
-              <div class="swatch" style="background:#d96f32;"></div>
-            </div>
-            <p>Perfect for muhurtham ceremonies, receptions, temple functions, and festive family celebrations.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="collections">
       <div class="container">
         <div class="section-heading">
@@ -775,6 +719,19 @@
           <article class="gallery-card"><img src="https://images.unsplash.com/photo-1630336637317-6f78d5eeea06?auto=format&fit=crop&w=900&q=80" alt="Saree collection 9" /><p>Heritage-style muhurtham saree collection.</p></article>
           <article class="gallery-card"><img src="https://images.unsplash.com/photo-1616246980371-f4f8f22a4032?auto=format&fit=crop&w=900&q=80" alt="Saree collection 10" /><p>Family combo set for group occasions.</p></article>
           <article class="gallery-card"><img src="https://images.unsplash.com/photo-1617331140180-e8262094733a?auto=format&fit=crop&w=900&q=80" alt="Saree collection 11" /><p>Premium festive silk with timeless elegance.</p></article>
+        <h2>Collections</h2>
+        <div class="card-grid-11">
+          <article class="card"><img src="https://images.unsplash.com/photo-1610189020396-57f28de4f4eb?auto=format&fit=crop&w=900&q=80" alt="Silk saree 1" /><p>Temple border bridal silk with rich maroon-gold contrast.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1618244972963-dbad68f5a56f?auto=format&fit=crop&w=900&q=80" alt="Silk saree 2" /><p>Vibrant festival weave with elegant zari pallu finish.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1629533271060-4e470dccb730?auto=format&fit=crop&w=900&q=80" alt="Silk saree 3" /><p>Classic Kanchi-inspired motif for wedding occasions.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1621784563330-caee0b138a00?auto=format&fit=crop&w=900&q=80" alt="Silk saree 4" /><p>Peacock shades with handloom-inspired body patterns.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=900&q=80" alt="Silk saree 5" /><p>Soft drape party silk for receptions and gifting.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1609250291996-fdebe6020a8c?auto=format&fit=crop&w=900&q=80" alt="Silk saree 6" /><p>Bold contrast checks with traditional border detailing.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1583391733956-6c77a83e011f?auto=format&fit=crop&w=900&q=80" alt="Silk saree 7" /><p>Graceful pastel zari weave suited for day events.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?auto=format&fit=crop&w=900&q=80" alt="Silk saree 8" /><p>Royal purple silk with rich pallu craftsmanship.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1630336637317-6f78d5eeea06?auto=format&fit=crop&w=900&q=80" alt="Silk saree 9" /><p>Heritage-style weave for muhurtham ceremonies.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1616246980371-f4f8f22a4032?auto=format&fit=crop&w=900&q=80" alt="Silk saree 10" /><p>Color-coordinated family set for group functions.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1617331140180-e8262094733a?auto=format&fit=crop&w=900&q=80" alt="Silk saree 11" /><p>Premium festive silk with timeless South Indian flair.</p></article>
         </div>
       </div>
     </section>
@@ -814,41 +771,20 @@
     </section>
 
     <section>
+    <section id="about">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Why customers choose us</span>
-          <h2>A commercial website built to inspire confidence and drive enquiries.</h2>
-        </div>
-        <div class="features">
-          <article class="feature-card">
-            <h3>Premium silk appeal</h3>
-            <ul>
-              <li>Elegant luxury-focused design language</li>
-              <li>Showcases product categories clearly</li>
-              <li>Strong messaging for bridal and festive buyers</li>
-            </ul>
-          </article>
-          <article class="feature-card">
-            <h3>Lead-friendly experience</h3>
-            <ul>
-              <li>WhatsApp-first call to action for quick conversion</li>
-              <li>Visit booking prompts placed throughout the page</li>
-              <li>Contact details made easy to find on mobile</li>
-            </ul>
-          </article>
-          <article class="feature-card">
-            <h3>Local trust building</h3>
-            <ul>
-              <li>Highlights Palladam presence and heritage value</li>
-              <li>Reassures shoppers with service-oriented copy</li>
-              <li>Supports retail customers and bulk purchase enquiries</li>
-            </ul>
-          </article>
+        <h2>About</h2>
+        <p>Sri Negamam Silks continues Palladam's silk tradition with trusted quality, styling guidance, and warm family service.</p>
+        <div class="about-grid">
+          <article class="card"><img src="https://images.unsplash.com/photo-1638345394738-2793075ac4f8?auto=format&fit=crop&w=800&q=80" alt="About image 1" /><p>Handpicked sarees with quality checks.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1562158070-57cdeed9375f?auto=format&fit=crop&w=800&q=80" alt="About image 2" /><p>Helpful in-store support for families.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1598331668826-20cecc596b86?auto=format&fit=crop&w=800&q=80" alt="About image 3" /><p>Bridal, festive, and gifting collections.</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80" alt="About image 4" /><p>Custom recommendations and matching colors.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="process" id="process">
+    <section id="craftsmanship">
       <div class="container">
         <div class="section-heading">
           <span class="eyebrow">Craftsmanship journey</span>
@@ -869,71 +805,40 @@
           <article class="gallery-card"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Craft image 2" /><p>Dyeing and colour matching process.</p></article>
           <article class="gallery-card"><img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=80" alt="Craft image 3" /><p>Weaving patterns on the loom.</p></article>
           <article class="gallery-card"><img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=80" alt="Craft image 4" /><p>Final finishing and quality inspection.</p></article>
+        <h2>Craftsmanship</h2>
+        <div class="cycle">
+          <div class="cycle-step">1. Silk yarn selection</div>
+          <div class="cycle-step">2. Thread dyeing</div>
+          <div class="cycle-step">3. Loom setup</div>
+          <div class="cycle-step">4. Weaving &amp; zari work</div>
+          <div class="cycle-step">5. Finishing &amp; packing</div>
+        </div>
+        <div class="craft-images">
+          <article class="card"><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Craft image 1" /><p>Thread preparation</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Craft image 2" /><p>Loom alignment</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80" alt="Craft image 3" /><p>Weaving in progress</p></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=80" alt="Craft image 4" /><p>Final inspection</p></article>
         </div>
       </div>
     </section>
 
-    <section id="testimonials">
+    <section id="reviews">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Customer love</span>
-          <h2>Designed to reflect the trust a local silk store earns over time.</h2>
-        </div>
-        <div class="testimonials">
-          <article class="testimonial">
-            <p>"A beautiful collection for weddings. The color suggestions and blouse matching support made our family shopping easy."</p>
-            <strong>— Bridal customer, Palladam</strong>
-          </article>
-          <article class="testimonial">
-            <p>"We were looking for elegant silk sarees for a family function, and SRI NEGAMAM SILKS helped us choose graceful designs within budget."</p>
-            <strong>— Festive shopper, Tiruppur region</strong>
-          </article>
-          <article class="testimonial">
-            <p>"Very warm service and premium presentation. Perfect place for sarees that feel traditional yet modern."</p>
-            <strong>— Repeat customer</strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="cta-band">
-          <span class="eyebrow" style="background:rgba(255,255,255,0.12); color:#fff;">Plan your visit</span>
-          <h2>Looking for bridal silk sarees or festive collections in Palladam?</h2>
-          <p>
-            Visit SRI NEGAMAM SILKS for an in-person shopping experience, or message us on WhatsApp to receive the latest catalogue and pricing support.
-          </p>
-          <div class="contact-actions">
-            <a class="cta" style="background:#fff; color:var(--primary);" href="tel:+919965547344">Call the Store</a>
-            <a class="btn-secondary" style="border-color:rgba(255,255,255,0.25); color:#fff; background:transparent;" href="https://wa.me/919965547355" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
-          </div>
-        </div>
+        <h2>Reviews</h2>
+        <p>"Wonderful color collections and kind service." · "Perfect sarees for wedding shopping." · "Best quality options in Palladam."</p>
       </div>
     </section>
 
     <section id="contact">
-      <div class="container contact-grid">
+      <div class="container">
+        <h2>Contact</h2>
         <div class="contact-card">
-          <span class="eyebrow">Visit us</span>
-          <h2>SRI NEGAMAM SILKS, Palladam</h2>
           <ul class="contact-list">
             <li><strong>Address:</strong> 3/255, Moolakadu thottam, Sukkampalayam, Palladam, Tiruppur- 641662</li>
             <li><strong>Phone:</strong> +91 99655 47344, +91 99655 47355</li>
             <li><strong>WhatsApp:</strong> Catalogue requests and bulk order enquiries</li>
             <li><strong>Hours:</strong> Open daily, 9:30 AM to 8:30 PM</li>
           </ul>
-        </div>
-        <div class="contact-card">
-          <span class="eyebrow">Business enquiries</span>
-          <h3>For weddings, gifting, and repeat family shopping</h3>
-          <p>
-            Contact us for curated bridal appointments, family purchase planning, festive shopping guidance, and return gift saree requirements.
-          </p>
-          <div class="contact-actions">
-            <a class="cta" href="mailto:hello@negamamsilks.com">Email Us</a>
-            <a class="btn-secondary" href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to Top</a>
-          </div>
         </div>
       </div>
     </section>
@@ -957,6 +862,20 @@
       if (!menuToggle.contains(event.target) && !menuPanel.contains(event.target)) {
         menuPanel.classList.remove('show');
         menuToggle.setAttribute('aria-expanded', 'false');
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const menuLinks = document.getElementById('menuLinks');
+
+    menuBtn.addEventListener('click', () => {
+      menuLinks.classList.toggle('show');
+      const expanded = menuLinks.classList.contains('show');
+      menuBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target) && !menuLinks.contains(e.target)) {
+        menuLinks.classList.remove('show');
+        menuBtn.setAttribute('aria-expanded', 'false');
       }
     });
   </script>
