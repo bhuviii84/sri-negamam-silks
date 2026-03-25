@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">SRI NEGAMAM SILKS logo</title>
+  <desc id="desc">Stylized blue crest logo for SRI NEGAMAM SILKS.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="520" rx="28" fill="url(#bg)"/>
+  <circle cx="260" cy="280" r="165" fill="#ffffff" stroke="#173f9e" stroke-width="12"/>
+  <circle cx="260" cy="280" r="135" fill="#eef4ff" stroke="#173f9e" stroke-width="8"/>
+  <path d="M170 324c24-34 44-50 90-50s67 16 91 50" fill="none" stroke="#173f9e" stroke-width="10" stroke-linecap="round"/>
+  <rect x="205" y="232" width="110" height="70" rx="14" fill="#173f9e" opacity="0.1"/>
+  <path d="M200 316h120M220 338h80" stroke="#173f9e" stroke-width="8" stroke-linecap="round"/>
+  <text x="260" y="95" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#173f9e">SRI NEGAMAM</text>
+  <text x="260" y="148" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" fill="#173f9e">SILKS</text>
+  <path d="M80 176c46-30 113-46 180-46s134 16 180 46" fill="none" stroke="#173f9e" stroke-width="8"/>
+  <path d="M80 430c46 30 113 46 180 46s134-16 180-46" fill="none" stroke="#173f9e" stroke-width="8"/>
+  <text x="260" y="454" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#173f9e">Weaving Heritage into Every Thread</text>
+</svg>
